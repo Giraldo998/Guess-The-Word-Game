@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'outfit', sans-serif;
+   color: #F2F5F9;
+   background-image: url('../img/bg-guess-the-word.jpg');
+   background-size: cover;
+   background-position: center;
+}
+
+.content-container{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 24%;
+   height: 52.5%;
+   padding: 35px 25px 25px;
+   background-color: #171E30;
+   border-radius: 12px;
+
+   .title{
+      margin-bottom: 25px;
+   }
+
+   .game-container{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      .random-word{
+         width: 100%;
+         height: 60px;
+         margin-bottom: 1rem;
+         align-content: center;
+         font-size: 2rem;
+         text-align: center;
+         color: inherit;
+         letter-spacing: 1rem;
+         background-color: #4A5567;
+         border-radius: 5px;
+         box-shadow: 0px 4px 0px 0px #030616;
+      }
+
+      .status-answers{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         width: 100%;
+         padding: 5px;
+         font-size: .85rem;
+         margin-bottom: 3rem;
+
+         .tries{
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            gap: 10px;
+
+            p{
+               width: 50%;
+               margin-right: 10px;
+            }
+
+            ol{
+               display: flex;
+               flex-direction: row;
+               gap: 10px;
+               width: 50%;
+               list-style: disc;
+               color: #4A5567;
+            }
+         }
+
+         .mistakes{
+            width: 50%;
+            text-align: right;
+         }
+      }
+
+      .input-container{
+         display: flex;
+         justify-content: center;
+         flex-direction: row;
+         width: 100%;
+         margin-bottom: 3rem;
+
+         input{
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            color: inherit;
+            font-size: 1.25rem;
+            margin-inline: 3px;
+            border-radius: 7px;
+            border: 3px solid #4A5567;
+            background-color: #171E30;
+
+            &:focus{
+               outline: none;
+               border: 3px solid #672171;
+            }
+
+            &::placeholder{
+               color: inherit;
+            }
+         }
+      }
+   }
+   .buttons-container{
+      
+      .game-button{
+         padding: 10px 35px;
+         margin-inline: 10px;
+         border-radius: 7px;
+         color: inherit;
+         font-family: inherit;
+         background-color: #C951E7;
+         border: 1px solid #C951E7;
+         filter: drop-shadow(0px 4px 0px #7b248a);
+      }
+   }
+}

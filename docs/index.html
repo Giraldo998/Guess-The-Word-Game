@@ -3,9 +3,50 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/ico" href="./assets/img/favicon.ico">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/styles.css">
    <title>Guess The Word Game</title>
 </head>
 <body>
-   
+   <section class="content-container">
+      <header class="title">
+         <img src="assets/img/word-scramblle-logo.svg" alt="word-scramblle-logo">
+      </header>
+      <main class="game-container">
+         <div class="random-word">
+            <p id="word-container">relowf</p>
+         </div>
+         <div class="status-answers">
+            <div class="tries">
+               <p id="tries">Tries (4/5): </p>
+               <ol>
+                  <li class="try-item" id="try-one"></li>
+                  <li class="try-item" id="try-two"></li>
+                  <li class="try-item" id="try-three"></li>
+                  <li class="try-item" id="try-four"></li>
+                  <li class="try-item" id="try-five"></li>
+               </ol>
+            </div>
+            <div class="mistakes">
+               <p id="mistakes">Mistakes: <span id="letter-mistakes">a, e, w, t</span></p>
+            </div>
+         </div>
+         <div class="input-container">
+            <input  type="text" id="guess-input" placeholder="_" value="f">
+            <input type="text" id="guess-input" placeholder="_" value="l">
+            <input type="text" id="guess-input" placeholder="_" value="o">
+            <input type="text" id="guess-input" placeholder="_" value="w">
+            <input type="text" id="guess-input" placeholder="_" value="">
+            <input type="text" id="guess-input" placeholder="_" value="">
+         </div>
+      </main>
+      <footer class="buttons-container">
+         <button class="game-button" id="random-button">Random</button>
+         <button class="game-button" id="reset-button">Reset</button>
+      </footer>
+   </section>
 </body>
 </html>
