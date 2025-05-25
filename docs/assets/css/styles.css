@@ -21,7 +21,8 @@ body{
    display: flex;
    align-items: center;
    flex-direction: column;
-   width: 24%;
+   min-width: 24%;
+   width: auto;
    height: 52.5%;
    padding: 35px 25px 25px;
    background-color: #171E30;
@@ -66,20 +67,24 @@ body{
             display: flex;
             flex-direction: row;
             width: 50%;
-            gap: 10px;
 
             p{
-               width: 50%;
-               margin-right: 10px;
+               width: 69px;
             }
 
             ol{
                display: flex;
                flex-direction: row;
+               justify-content: center;
                gap: 10px;
-               width: 50%;
+               width: 69px;
+               padding-left: 5px;
                list-style: disc;
                color: #4A5567;
+
+               .try-item.active{
+                  color: #672171;
+               }
             }
          }
 
@@ -94,6 +99,7 @@ body{
          justify-content: center;
          flex-direction: row;
          width: 100%;
+         min-height: 45px;
          margin-bottom: 3rem;
 
          input{
