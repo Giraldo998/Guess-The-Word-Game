@@ -17,11 +17,11 @@
       </header>
       <main class="game-container">
          <div class="random-word">
-            <p id="word-container">relowf</p>
+            <p id="word-container"></p>
          </div>
          <div class="status-answers">
             <div class="tries">
-               <p id="tries">Tries (4/5): </p>
+               <p>Tries <span id="tries">(0/5)</span>: </p>
                <ol>
                   <li class="try-item" id="try-one"></li>
                   <li class="try-item" id="try-two"></li>
@@ -31,16 +31,10 @@
                </ol>
             </div>
             <div class="mistakes">
-               <p id="mistakes">Mistakes: <span id="letter-mistakes">a, e, w, t</span></p>
+               <p id="mistakes">Mistakes: <span id="letter-mistakes"></span></p>
             </div>
          </div>
-         <div class="input-container">
-            <input  type="text" id="guess-input" placeholder="_" value="f">
-            <input type="text" id="guess-input" placeholder="_" value="l">
-            <input type="text" id="guess-input" placeholder="_" value="o">
-            <input type="text" id="guess-input" placeholder="_" value="w">
-            <input type="text" id="guess-input" placeholder="_" value="">
-            <input type="text" id="guess-input" placeholder="_" value="">
+         <div class="input-container" id="input-container">
          </div>
       </main>
       <footer class="buttons-container">
@@ -48,5 +42,7 @@
          <button class="game-button" id="reset-button">Reset</button>
       </footer>
    </section>
+
+   <script type="module" src="assets/js/index.js"></script>
 </body>
 </html>
